@@ -34,7 +34,7 @@ async function run(){
         // const User=await Users.countDocuments({"address.city":"patna"})
         // const User=await Users.updateOne({name:"pratik"},{$set:{name:"shiva"}})
 
-        const User=await Users.findOne({name:"pratik"})
+        const User=await Users.findOne({age:{$gt:16}})
         console.log(User)
         User.sayHi()
 
